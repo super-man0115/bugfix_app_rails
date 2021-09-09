@@ -17,5 +17,7 @@ class UserSessionsController < ApplicationController
   end
 
   def destroy
+    log_out
+    redirect_to login_path, success: 'Logout successful!'
   end
 end
