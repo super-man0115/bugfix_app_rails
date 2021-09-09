@@ -11,6 +11,7 @@ class UserSessionsController < ApplicationController
       log_in_with user
       redirect_to top_pages_index_path, success: 'Login successful!'
     else
+      # 他人のアカウントでログインしようとする人へのヒントとならない様に、入力されたメールアドレスが存在する場合も同じエラーメッセージを返す
       flash.now[:danger] = 'Invalid email or password'
       render :new
     end
