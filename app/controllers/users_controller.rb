@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       flash[:success] = "Signup success!"
-      redirect_to top_pages_index_url
+      redirect_to top_page_url
     else
       render :new
     end
