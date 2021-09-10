@@ -3,5 +3,6 @@ class TopPagesController < ApplicationController
   end
 
   def help
+    render :new
   end
 end
