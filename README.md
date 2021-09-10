@@ -1,24 +1,20 @@
-# README
+# 概要
+- 基礎力確認テストとして、バグ修正をお願いします。
+- 後述のテスト実行コマンドがエラーにならないように修正してください。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 環境構築
+```
+$ git checkout -b fix_[自分のアカウント名]
+$ rbenv local 2.7.4
+$ bundle install
+$ rails db:migrate
+$ rails server
+```
 
-Things you may want to cover:
+## テスト実行
+```
+$ rails test:system
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+※ ローカルでMiniTestのテストコードが成功する様な修正が確認できれば、この課題は完了となります。  
+修正したコードのcommitやpushは不要です。  
