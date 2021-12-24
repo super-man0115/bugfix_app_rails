@@ -4,7 +4,7 @@
 
 ## 環境構築
 ```
-$ git checkout -b fix_[自分のアカウント名]
+$ git checkout -b fix_[自分のアカウント名]  # 例:git checkout -b fix_runtekun
 $ rbenv local 2.7.4
 $ bundle install
 $ rails db:migrate
